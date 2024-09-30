@@ -7,19 +7,25 @@ def min_movement_cost(containers):
     diff = [container - target for container in containers]
     
     # We will accumulate the imbalance and calculate the total movement cost
-    total_cost = 100000000000
-    temp_1 = 0
-    imbalance = 0
-    
-    for i from (n):
-    
-    imbalance = 0
-    temp_2 = 0
-    # Traverse the containers, accumulate the imbalance, and calculate the cost
-    for i in range(n-1,-1,-1):
-        imbalance += diff[i]
-        temp_2
-    
+    total_cost = 0
+    index = 0
+    cur_bal = 0
+    temp_len = n
+    for i in range(len(diff)):
+        if diff[i] > 0:
+            index = i
+
+    temp_index = index
+    while temp_len>0:
+        if diff[temp_index] > 0:
+            cur_bal += diff[temp_index]
+        
+
+
+    temp_index = index
+    temp_len = n
+    while temp_len> 0 :
+
     return total_cost
 
 # Example usage:
