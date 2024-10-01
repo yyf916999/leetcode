@@ -16,18 +16,20 @@ def min_movement_cost(containers):
             index = i
 
     temp_index = index
-    while temp_len>0:
-        if diff[temp_index] > 0:
-            cur_bal += diff[temp_index]
+    #while temp_len>0:
+    #    if diff[temp_index] > 0:
+    #        cur_bal += diff[temp_index]
         
 
 
     temp_index = index
     temp_len = n
-    while temp_len> 0 :
+    #while temp_len> 0 :
 
     return total_cost
 
 # Example usage:
-containers = [3, 4, 6, 6, 6]
-print(min_movement_cost(containers))  # Output should be 7
+containers = [3, 4, 6, 9, 1]
+containers.sort()
+print(containers)
+#print(min_movement_cost(containers))  # Output should be 7
